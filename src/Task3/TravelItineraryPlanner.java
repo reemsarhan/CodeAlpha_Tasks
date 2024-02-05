@@ -1,19 +1,45 @@
 package Task3;
 import java.util.Scanner;
+
+/**
+ * The TravelItineraryPlanner class assists users in planning their travel itineraries.
+ */
 public class TravelItineraryPlanner {
 
+    /**
+     * Generates a map URL for the given destination.
+     *
+     * @param destination The destination for which the map URL is generated.
+     * @return The map URL.
+     */
     private static String getMapUrl(String destination) {
         return "https://maps.example.com/?destination=" + destination;
     }
 
+    /**
+     * Retrieves weather information for the given destination and date.
+     *
+     * @param destination The destination for which weather information is retrieved.
+     * @param date        The date for which weather information is retrieved.
+     * @return The weather information.
+     */
     private static String getWeatherInfo(String destination, String date) {
         return "Weather information for " + destination + " on " + date + ": Sunny, 25°C";
     }
 
+    /**
+     * Calculates the remaining budget after accounting for travel expenses.
+     *
+     * @param initialBudget    The initial budget set by the user.
+     * @param numDestinations  The number of destinations in the travel plan.
+     * @return The remaining budget after deducting travel expenses.
+     */
     private static double calculateRemainingBudget(double initialBudget, int numDestinations) {
         return initialBudget - (numDestinations * 100); // Assuming each destination costs $100
     }
-
+    /**
+     * Main method to initiate the TravelItineraryPlanner and guide users through planning their travel itinerary.
+     */
     public void TravelItineraryPlanner(){
             Scanner scanner = new Scanner(System.in);
 
@@ -63,7 +89,6 @@ public class TravelItineraryPlanner {
 
             scanner.close();
         }
-
 
 
 

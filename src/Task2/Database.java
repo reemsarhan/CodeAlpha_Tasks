@@ -2,10 +2,19 @@ package Task2;
 
 import java.util.ArrayList;
 
+/**
+ * The Database class manages a collection of bank accounts.
+ */
 public class Database {
 
+    /**
+     * ArrayList to store the bank accounts.
+     */
     public static ArrayList<Account>BankAccounts=new ArrayList<>();
 
+    /**
+     * Constructor to initialize the Database with some sample bank accounts.
+     */
     Database(){
         BankAccounts.add(new Account("1","1234",1000));
         BankAccounts.add(new Account("2","0000",9000));

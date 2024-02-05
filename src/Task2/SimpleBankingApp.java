@@ -2,10 +2,21 @@ package Task2;
 
 import java.util.Scanner;
 
+/**
+ * The SimpleBankingApp class serves as a simple banking application for user interactions.
+ */
 public class SimpleBankingApp {
+    /**
+     * Controller instance for managing bank accounts and transactions.
+     */
 Controller controller=new Controller();
     Scanner input = new Scanner(System.in);
     Scanner input2 = new Scanner(System.in);
+
+
+    /**
+     * Main method to initiate the SimpleBankingApp and handle user interactions.
+     */
 public void SimpleBankingApp(){
     System.out.println("Welcome to BankingApp");
     while (true){

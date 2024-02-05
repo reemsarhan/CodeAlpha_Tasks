@@ -1,8 +1,18 @@
 package Task1;
 import java.util.Scanner;
+
+/**
+ * The StudentGradeTracker class serves as the entry point for interacting with the StudentGradeTracker system.
+ */
 public class StudentGradeTracker {
+    /**
+     * Controller instance for managing student grades.
+     */
     Controller controller=new Controller();
     Scanner input = new Scanner(System.in);
+    /**
+     * Main method to initiate the StudentGradeTracker system.
+     */
     public void StudentGradeTracker(){
         System.out.println("Welcome to StudentGradeTracker System");
         while (true) {

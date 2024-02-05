@@ -1,14 +1,27 @@
 package Task1;
 import java.util.Scanner;
+/**
+ * The Controller class manages the interaction between the user interface and the Database for student-related operations.
+ */
 public class Controller {
 
    Database DB=new Database();
 Scanner input = new Scanner(System.in);
     Scanner input2 = new Scanner(System.in);
+    /**
+     * Adds grades for a given student.
+     *
+     * @param student The student for whom grades need to be added.
+     */
     public void AddStudentGrades(Student student){
         if(student!=null) DB.AddStudentGrades(student);
-}
+    }
 
+    /**
+     * Retrieves and displays grades for a specific student by name.
+     *
+     * @param name The name of the student.
+     */
 public void GetStudentGrades(String name){
 
   Student student=DB.GetStudentGrades(name);
@@ -28,6 +41,9 @@ public void GetStudentGrades(String name){
   }
 }
 
+    /**
+     * Retrieves and prints the grades of all students in the database.
+     */
  public void GetAllStudentsGrades(){
     System.out.println("ALL Student Grades:");
     for(Student student :DB.StudentsGrades){
@@ -36,7 +52,9 @@ public void GetStudentGrades(String name){
     }
 
  }
-
+    /**
+     * Adds a new student to the database with user-provided details.
+     */
  public void AddStudent(){
     System.out.println("Enter Student name:");
      String name = input2.nextLine();
@@ -54,7 +72,11 @@ public void GetStudentGrades(String name){
      AddStudentGrades(s);
  }
 
-
+    /**
+     * Calculates and returns the average grades of all students in the database.
+     *
+     * @return The average grades of all students.
+     */
     public float AverageGrades() {
         float total = 0;
         for (Student student : DB.StudentsGrades) {
@@ -63,6 +85,11 @@ public void GetStudentGrades(String name){
         total/=DB.StudentsGrades.size();
         return total;
     }
+    /**
+     * Finds and returns the highest total score among all students.
+     *
+     * @return The highest total score.
+     */
     public float GetHighestScores() {
         float Max = 0;
         for (Student student : DB.StudentsGrades) {
@@ -70,6 +97,11 @@ public void GetStudentGrades(String name){
         }
         return Max;
     }
+    /**
+     * Finds and returns the lowest total score among all students.
+     *
+     * @return The lowest total score.
+     */
     public float GetLowestScores() {
         float Min = 1e9F;
         for (Student student : DB.StudentsGrades) {

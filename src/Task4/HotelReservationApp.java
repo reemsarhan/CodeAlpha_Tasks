@@ -2,11 +2,19 @@ package Task4;
 
 import java.util.Scanner;
 
+
+/**
+ * The HotelReservationApp class serves as an application for interacting with room reservations.
+ */
 public class HotelReservationApp {
     Scanner input = new Scanner(System.in);
     Scanner input2 = new Scanner(System.in);
     Controller controller=new Controller();
 
+    
+    /**
+     * Main method to initiate the HotelReservationApp and guide users through reservation actions.
+     */
     public void HotelReservationApp(){
         System.out.println("Welcome to HotelReservationApp ");
         while (true){

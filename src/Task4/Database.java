@@ -22,9 +22,9 @@ public class Database {
      * Constructor to initialize the Database with some sample room information.
      */
     Database(){
-        Rooms.add(new Room("Single",100,10));
-        Rooms.add(new Room("Double",200,8));
-        Rooms.add(new Room("Suite",500,5));
+        Rooms.add(new Room("single",100,10));
+        Rooms.add(new Room("double",200,8));
+        Rooms.add(new Room("suite",500,5));
     }
 
 

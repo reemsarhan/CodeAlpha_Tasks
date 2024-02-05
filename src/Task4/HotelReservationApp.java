@@ -26,6 +26,8 @@ public class HotelReservationApp {
             String Choice=input.nextLine();
             switch (Choice){
                 case "1":
+                    System.out.println("Room types:");
+                    System.out.println("single  double  suite");
                     System.out.println("Enter the room category that you want to reserve");
                     String category=input.nextLine();
                     System.out.println("Enter number of rooms  that you want to reserve");

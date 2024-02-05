@@ -34,13 +34,10 @@ public class Main {
 
 
         // Task 4
-        // example to use
-        // room types: Single  Double Suite
-        //        Rooms.add(new Room("Single",100,10));
-        //        Rooms.add(new Room("Double",200,8));
-        //        Rooms.add(new Room("Suite",500,5));
-        HotelReservationApp hotelReservationApp=new HotelReservationApp();
-        hotelReservationApp.HotelReservationApp();
+
+
+//        HotelReservationApp hotelReservationApp=new HotelReservationApp();
+//        hotelReservationApp.HotelReservationApp();
 
     }
 }

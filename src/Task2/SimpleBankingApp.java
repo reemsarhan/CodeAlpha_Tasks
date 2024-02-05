@@ -45,7 +45,7 @@ public void SimpleBankingApp(){
                 BankID = input.nextLine();
                 System.out.println("Please enter your Password");
                 Password=input.nextLine();
-                System.out.println("Please enter the amount of money you want to deposit ");
+                System.out.println("Please enter the amount of money you want to withdraw ");
                 float WithdrawMoney= Float.parseFloat(input2.nextLine());
                 if(controller.Withdraw(BankID,Password,WithdrawMoney)) {
                     System.out.println("Withdraw done successfully");

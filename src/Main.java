@@ -28,8 +28,8 @@ public class Main {
 
 
         // Task 3
-//        TravelItineraryPlanner travelItineraryPlanner=new TravelItineraryPlanner();
-//        travelItineraryPlanner.TravelItineraryPlanner();
+        TravelItineraryPlanner travelItineraryPlanner=new TravelItineraryPlanner();
+        travelItineraryPlanner.TravelItineraryPlanner();
 
 
 
